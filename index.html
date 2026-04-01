@@ -264,14 +264,14 @@
             </div>
 
             <div id="tab-single" class="input-group" style="display: none;">
-                <div id="edit-indicator" style="display:none; color:var(--edit-color); font-weight:bold; margin-bottom:10px;">⚠️ 단어를 수정 중입니다</div>
+                <div id="edit-indicator" style="display: none; color: var(--edit-color); font-weight: bold; margin-bottom: 10px;">⚠️ 단어를 수정 중입니다</div>
                 <input type="text" id="input-word" placeholder="단어 (Word)">
                 <input type="text" id="input-mean" placeholder="뜻 (Meaning)">
                 <input type="text" id="input-method" placeholder="암기방법 (Mnemonic)">
                 <input type="text" id="input-note" placeholder="참고 (Note)">
                 <div style="display:flex; gap:10px;">
                     <button id="btn-save-single" class="action-btn" onclick="addSingleWord()" style="background: var(--primary-color);">저장하기</button>
-                    <button id="btn-cancel-edit" class="action-btn" onclick="cancelEditAndReturn()" style="display:none; background:#95a5a6;">취소</button>
+                    <button id="btn-cancel-edit" class="action-btn" onclick="cancelEditAndReturn()" style="display: none; background: rgb(149, 165, 166);">취소</button>
                 </div>
             </div>
 
@@ -9339,7 +9339,7 @@
     <div id="study-screen" class="screen">
         <div class="header">
             <button class="back-btn" onclick="quitStudy()">X 종료</button>
-            <span id="study-mode-title">순서대로 학습 (1~10번)</span>
+            <span id="study-mode-title">학습 중</span>
         </div>
         
         <div class="scroll-content">
@@ -9347,18 +9347,18 @@
             <button class="nav-arrow nav-right" onclick="moveCard(1)">&gt;</button>
 
             <div class="study-card" id="card-area" onclick="toggleCard()">
-                <div class="word-display" id="study-main-text">1. culture</div>
+                <div class="word-display" id="study-main-text">Ready?</div>
                 <button class="sound-btn" onclick="event.stopPropagation(); playSound();">🔊</button>
                 <div style="font-size:0.8rem; color:#aaa; margin-bottom:10px;">(터치하여 뜻 토글)</div>
 
-                <div class="details-display" id="study-details" style="display: none;">
+                <div class="details-display" id="study-details">
                     <div class="detail-item">
                         <span class="detail-label" id="label-sub-text">뜻</span><br>
-                        <span id="study-sub-text" style="font-weight:bold; color:var(--primary-color);">문화, 교양</span>
+                        <span id="study-sub-text" style="font-weight:bold; color:var(--primary-color);"></span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">암기법</span><br>
-                        <span id="study-method">1.중세시대에는 허리에 칼 차는 것이 그 시대의 문화요 교양이었다. 2.컬쳐랜드는 문화상품권이다.</span>
+                        <span id="study-method"></span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">참고</span><br>
